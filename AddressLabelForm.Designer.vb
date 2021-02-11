@@ -63,28 +63,28 @@ Partial Class AddressLabelForm
         Me.ZipTextBox.Location = New System.Drawing.Point(6, 161)
         Me.ZipTextBox.Name = "ZipTextBox"
         Me.ZipTextBox.Size = New System.Drawing.Size(100, 22)
-        Me.ZipTextBox.TabIndex = 2
+        Me.ZipTextBox.TabIndex = 5
         '
         'StateTextBox
         '
         Me.StateTextBox.Location = New System.Drawing.Point(6, 133)
         Me.StateTextBox.Name = "StateTextBox"
         Me.StateTextBox.Size = New System.Drawing.Size(100, 22)
-        Me.StateTextBox.TabIndex = 3
+        Me.StateTextBox.TabIndex = 4
         '
         'StreetAddressTextBox
         '
         Me.StreetAddressTextBox.Location = New System.Drawing.Point(6, 77)
         Me.StreetAddressTextBox.Name = "StreetAddressTextBox"
         Me.StreetAddressTextBox.Size = New System.Drawing.Size(100, 22)
-        Me.StreetAddressTextBox.TabIndex = 4
+        Me.StreetAddressTextBox.TabIndex = 2
         '
         'CityTextBox
         '
         Me.CityTextBox.Location = New System.Drawing.Point(6, 105)
         Me.CityTextBox.Name = "CityTextBox"
         Me.CityTextBox.Size = New System.Drawing.Size(100, 22)
-        Me.CityTextBox.TabIndex = 5
+        Me.CityTextBox.TabIndex = 3
         '
         'InputGroupBox
         '
@@ -103,7 +103,7 @@ Partial Class AddressLabelForm
         Me.InputGroupBox.Location = New System.Drawing.Point(12, 12)
         Me.InputGroupBox.Name = "InputGroupBox"
         Me.InputGroupBox.Size = New System.Drawing.Size(244, 248)
-        Me.InputGroupBox.TabIndex = 6
+        Me.InputGroupBox.TabIndex = 11
         Me.InputGroupBox.TabStop = False
         Me.InputGroupBox.Text = "Mailing Address"
         '
@@ -112,7 +112,7 @@ Partial Class AddressLabelForm
         Me.DisplayButton.Location = New System.Drawing.Point(18, 396)
         Me.DisplayButton.Name = "DisplayButton"
         Me.DisplayButton.Size = New System.Drawing.Size(100, 42)
-        Me.DisplayButton.TabIndex = 7
+        Me.DisplayButton.TabIndex = 6
         Me.DisplayButton.Text = "Display Label"
         Me.DisplayButton.UseVisualStyleBackColor = True
         '
@@ -121,7 +121,7 @@ Partial Class AddressLabelForm
         Me.ClearButton.Location = New System.Drawing.Point(220, 396)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(86, 42)
-        Me.ClearButton.TabIndex = 8
+        Me.ClearButton.TabIndex = 7
         Me.ClearButton.Text = "Clear"
         Me.ClearButton.UseVisualStyleBackColor = True
         '
@@ -130,7 +130,7 @@ Partial Class AddressLabelForm
         Me.ExitButton.Location = New System.Drawing.Point(698, 396)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(90, 42)
-        Me.ExitButton.TabIndex = 9
+        Me.ExitButton.TabIndex = 8
         Me.ExitButton.Text = "E&xit"
         Me.ExitButton.UseVisualStyleBackColor = True
         '
@@ -203,14 +203,16 @@ Partial Class AddressLabelForm
         Me.DisplayLabel.AutoSize = True
         Me.DisplayLabel.Location = New System.Drawing.Point(6, 20)
         Me.DisplayLabel.Name = "DisplayLabel"
-        Me.DisplayLabel.Size = New System.Drawing.Size(43, 17)
+        Me.DisplayLabel.Size = New System.Drawing.Size(12, 17)
         Me.DisplayLabel.TabIndex = 17
-        Me.DisplayLabel.Text = "Blank"
+        Me.DisplayLabel.Text = " "
         '
         'AddressLabelForm
         '
+        Me.AcceptButton = Me.DisplayButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.ExitButton
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.OutputGroupBox)
         Me.Controls.Add(Me.ExitButton)

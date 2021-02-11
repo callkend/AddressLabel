@@ -15,8 +15,7 @@ Public Class AddressLabelForm
     Private Sub DisplayButton_Click(sender As Object, e As EventArgs) Handles DisplayButton.Click
         DisplayLabel.Text = FirstNameTextBox.Text + " " + LastNameTextBox.Text + vbCrLf
         DisplayLabel.Text += StreetAddressTextBox.Text + vbCrLf
-        DisplayLabel.Text += CityTextBox.Text + ", " + StreetAddressTextBox.Text + " "
-        DisplayLabel.Text += ZipTextBox.Text
+        DisplayLabel.Text += CityTextBox.Text + ", " + StateTextBox.Text + " " + ZipTextBox.Text
     End Sub
 
     Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
